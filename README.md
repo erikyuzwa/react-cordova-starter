@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Create React App w/Cordova Starter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It's been
+also integrated with the Cordova basics, in order to create a starter project capable of building / deploying
+to mobile.
+
+The advantages of keeping in sync with `Create-React-App` imply that your project will continue to enjoy
+it's enhancements and utility.
 
 ## Available Scripts
 
@@ -28,6 +33,13 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn postbuild`
+
+This is a Cordova helper step. Once the React production bundle has been generated, this step is run to
+copy and prepare the necessary Cordova Platform files.
+
+Once this finishes, the build should be at a point where it's buildable via XCode or Android.
 
 ### `yarn eject`
 
